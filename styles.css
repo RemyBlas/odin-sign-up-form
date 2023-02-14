@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin: 0;
+    min-width: 100vw;
+    max-height: 100vw;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.left-side {
+    background-image: url(./sign-up-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: column nowrap;
+    min-width: 40vw;
+}
+
+.main-title {
+    display: flex;
+    flex-direction: column;
+
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 50px 0;
+    padding: 20px;
+}
+
+.logo {
+    align-self: center;
+    width: 250px;
+    height: auto;
+}
+
+h1 {
+    font-size: 1em;
+}
+
+footer {
+    margin: auto 0 10px;
+    text-align: center;
+    font-size: 0.6em;
+    font-weight: 100;
+}
+
+a:link {
+    text-decoration: none;
+    font-weight: 600;
+    color: #3f958a;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #3f958a;
+}
+
+.right-side {
+    width: 60vw;
+}
+
+.header,
+.log-in {
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.header {
+    padding: 4rem 3rem 2rem;
+}
+
+.log-in {
+    padding: 1rem 3rem;
+}
+
+form {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 1rem 3rem;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+
+.form-opening {
+    width: 100%;
+}
+
+button {
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+    padding: 20px 40px;
+    border: 0;
+    color: #ffffff;
+    background-color: #3f958a;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+input,
+label {
+    display: block;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    outline: none;
+    border-radius: 10px;
+    margin: 5px 0;
+    padding: 10px;
+    width: 20rem;
+}
+
+input::placeholder {
+    color: #b4b4b4;
+}
+
+input:focus::placeholder {
+    opacity: 0;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #800080;
+}
+
+input:valid {
+    border: 2px solid #00b100;
+}
+
+.psw-details {
+    font-size: 9px;
+    color: #b4b4b4;
+    margin: -10px 0;
+}

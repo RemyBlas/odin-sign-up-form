@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign-up form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <div class="main-title">
+                <img src="./logo_transparent.png" alt="JAFSUF logo" class="logo">
+                <!-- <h1 class="title-text">Just Another Fake Sign-Up Form</h1> -->
+            </div>
+            <footer>Photograph by <em><a href="https://www.pexels.com/@cottonbro/">Cottonbro Studio</a></em> from <em><a href="https://www.pexels.com/">Pexels</a></em>.</footer>
+        </div>
+        <div class="right-side">
+            <div class="header">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.</p>
+                <p>You <em>know</em> you want to.</p>
+            </div>
+            <form action="">
+                <p class="form-opening">Let's do this!</p>
+                <div class="input">
+                    <label for="first-name">First name</label>
+                    <input type="text" name="first-name" id="first-name" placeholder="Your first name" required>
+                </div>
+                <div class="input">
+                    <label for="last-name">Last name</label>
+                    <input type="text" name="last-name" id="last-name" placeholder="Your last name" required>
+                </div>
+                <div class="input">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="email@address.com" required>
+                </div>
+                <div class="input">
+                    <label for="phone-number">Phone number</label>
+                    <input type="tel" name="phone-number" id="phone-number" minlength="8" placeholder="0000-0000" required>
+                </div>
+                <div class="input">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="********" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                </div>
+                <div class="input">
+                    <label for="confirm-password">Confirm password</label>
+                    <input type="password" name="confirm-password" id="confirm-password" placeholder="********" minlength="8" required>
+                </div>
+                <p class="psw-details">Password must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters</p>
+                <div class="submit-button">
+                    <button type="submit">Create an account</button>
+                </div>
+            </form>
+            <div class="log-in">
+                <p>Already have an account? <a href="">Log in</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
